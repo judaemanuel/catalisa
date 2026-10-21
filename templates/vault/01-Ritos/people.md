@@ -1,6 +1,6 @@
-# Weekly Liderança Prudential
+# People
 
-Encontro semanal da liderança técnica e produto Prudential para alinhamento de prioridades, bloqueadores e decisões estratégicas.
+Rito focado em desenvolvimento, engajamento e bem-estar da equipe, incluindo discussões de capacitação, carreira e cultura.
 
 ## Histórico de encontros
 

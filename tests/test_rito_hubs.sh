@@ -5,9 +5,9 @@ fail() { echo "FAIL: $1"; exit 1; }
 
 declare -A hubs=(
   [pdca-mapeamento-projetos]="PDCA / Mapeamento de Projetos"
-  [weekly-lideranca-prudential]="Weekly Liderança Prudential"
-  [agentics-sdlc-prudential]="Agentics SDLC Prudential"
-  [prudential-people]="Prudential People"
+  [weekly-lideranca]="Weekly Liderança"
+  [agentics-sdlc]="Agentics SDLC"
+  [people]="People"
 )
 for f in "${!hubs[@]}"; do
   path="templates/vault/01-Ritos/$f.md"

@@ -1,6 +1,6 @@
-# Prudential People
+# Agentics SDLC
 
-Rito focado em desenvolvimento, engajamento e bem-estar da equipe Prudential, incluindo discussões de capacitação, carreira e cultura.
+Rito dedicado à evolução do SDLC (Software Development Lifecycle) com foco em agentics, automação e inteligência artificial aplicada ao desenvolvimento.
 
 ## Histórico de encontros
 

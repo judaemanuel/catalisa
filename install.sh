@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET="${1:-$SCRIPT_DIR/../catalisa-pru}"
+TARGET="${1:-$SCRIPT_DIR/../catalisa-instance}"
 
 if [ -e "$TARGET" ] && [ -n "$(ls -A "$TARGET" 2>/dev/null)" ]; then
   echo "Erro: o alvo '$TARGET' já existe e não está vazio. Escolha outro diretório ou remova o conteúdo existente." >&2
@@ -21,6 +21,6 @@ EOF
 
 git -C "$TARGET" init -q -b main
 git -C "$TARGET" add -A
-git -C "$TARGET" -c user.name="Catalisa Installer" -c user.email="catalisa@localhost" commit -q -m "chore: scaffold catalisa-pru v0 from catalisa templates"
+git -C "$TARGET" -c user.name="Catalisa Installer" -c user.email="catalisa@localhost" commit -q -m "chore: scaffold instance from catalisa templates"
 
 echo "Instância criada com sucesso em: $TARGET"

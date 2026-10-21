@@ -8,7 +8,7 @@ Gerador de um harness de melhoria contínua para vault Obsidian, baseado no cicl
 ./install.sh [caminho-do-destino]
 ```
 
-Se `caminho-do-destino` não for informado, a instância é criada em `../catalisa-pru` (relativo a este repositório). O script:
+Se `caminho-do-destino` não for informado, a instância é criada em `../catalisa-instance` (relativo a este repositório). O script:
 
 - copia a estrutura de templates (`templates/vault`) para o destino;
 - grava `.catalisa-version.json` no destino com a versão do gerador usada e a data de instalação;

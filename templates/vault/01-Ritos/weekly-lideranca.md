@@ -1,6 +1,6 @@
-# Agentics SDLC Prudential
+# Weekly Liderança
 
-Rito dedicado à evolução do SDLC (Software Development Lifecycle) com foco em agentics, automação e inteligência artificial aplicada ao desenvolvimento.
+Encontro semanal da liderança técnica e produto para alinhamento de prioridades, bloqueadores e decisões estratégicas.
 
 ## Histórico de encontros
 
