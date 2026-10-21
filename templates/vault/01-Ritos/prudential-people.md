@@ -4,7 +4,7 @@ Rito focado em desenvolvimento, engajamento e bem-estar da equipe Prudential, in
 
 ## Histórico de encontros
 
-- [[2026-10-21-prudential-people]]
+<!-- links para notas de ocorrência (criadas a partir de rito-encontro.md) aparecerão aqui -->
 
 ## Ações em aberto
 

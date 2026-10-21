@@ -4,7 +4,7 @@ Rito dedicado à evolução do SDLC (Software Development Lifecycle) com foco em
 
 ## Histórico de encontros
 
-- [[2026-10-21-agentics-sdlc]]
+<!-- links para notas de ocorrência (criadas a partir de rito-encontro.md) aparecerão aqui -->
 
 ## Ações em aberto
 

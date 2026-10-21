@@ -4,7 +4,7 @@ Rito de mapeamento contínuo de projetos e iniciativas em portfólio, usando cic
 
 ## Histórico de encontros
 
-- [[2026-10-21-pdca-mapeamento]]
+<!-- links para notas de ocorrência (criadas a partir de rito-encontro.md) aparecerão aqui -->
 
 ## Ações em aberto
 

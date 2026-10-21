@@ -4,7 +4,7 @@ Encontro semanal da liderança técnica e produto Prudential para alinhamento de
 
 ## Histórico de encontros
 
-- [[2026-10-21-weekly-lideranca]]
+<!-- links para notas de ocorrência (criadas a partir de rito-encontro.md) aparecerão aqui -->
 
 ## Ações em aberto
 

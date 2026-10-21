@@ -4,7 +4,7 @@ Corrente lateral dedicada ao amadurecimento de práticas de segurança no ciclo 
 
 ## Histórico de encontros
 
-- [[2026-10-21-devsecops-maturity]]
+<!-- links para notas de ocorrência (criadas a partir de rito-encontro.md) aparecerão aqui -->
 
 ## Ações em aberto
 
