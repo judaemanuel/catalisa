@@ -1,2 +1,5 @@
 # Artefatos temporários de teste
 /tmp-test-*
+
+# Worktrees e scaffolds locais de ferramentas de IA
+.claude/worktrees/
