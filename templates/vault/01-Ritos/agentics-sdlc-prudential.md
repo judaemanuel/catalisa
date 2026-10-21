@@ -9,7 +9,7 @@ Rito dedicado à evolução do SDLC (Software Development Lifecycle) com foco em
 ## Ações em aberto
 
 ```dataview
-TASK
+TABLE tipo, status, data, squad
 FROM -"03-Templates"
 WHERE contains(rito_origem, this.file.name) AND status != "concluido"
 SORT data ASC

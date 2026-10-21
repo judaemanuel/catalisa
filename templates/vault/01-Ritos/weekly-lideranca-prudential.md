@@ -9,7 +9,7 @@ Encontro semanal da liderança técnica e produto Prudential para alinhamento de
 ## Ações em aberto
 
 ```dataview
-TASK
+TABLE tipo, status, data, squad
 FROM -"03-Templates"
 WHERE contains(rito_origem, this.file.name) AND status != "concluido"
 SORT data ASC

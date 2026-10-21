@@ -9,7 +9,7 @@ Corrente lateral dedicada ao amadurecimento de práticas de segurança no ciclo 
 ## Ações em aberto
 
 ```dataview
-TASK
+TABLE tipo, status, data, squad
 FROM -"03-Templates"
 WHERE contains(rito_origem, this.file.name) AND status != "concluido"
 SORT data ASC
