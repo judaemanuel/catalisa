@@ -1,9 +1,2 @@
 # Artefatos temporários de teste
 /tmp-test-*
-
-# Dependências locais
-node_modules/
-.npm
-
-# Arquivos gerados
-*.log
