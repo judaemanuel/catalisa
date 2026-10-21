@@ -1,0 +1,5 @@
+{
+  "version": "0.1.0",
+  "gerador": "catalisa",
+  "templates": ["00-Diario", "01-Ritos", "02-Corrente-DevSecOps", "03-Templates", "04-Action-Items"]
+}
