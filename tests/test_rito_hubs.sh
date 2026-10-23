@@ -10,15 +10,17 @@ declare -A hubs=(
   [people]="People"
 )
 for f in "${!hubs[@]}"; do
-  path="templates/vault/01-Ritos/$f.md"
+  path="templates/vault/Ritos/$f.md"
   [ -f "$path" ] || fail "$path ausente"
   grep -qF "${hubs[$f]}" "$path" || fail "$path não contém o título '${hubs[$f]}'"
-  grep -q '```dataview' "$path" || fail "$path sem bloco dataview de ações em aberto"
+  grep -q 'FROM "Ritos/Encontros"' "$path" || fail "$path não lista encontros de Ritos/Encontros"
+  grep -q 'FROM -"\.catalisa"' "$path" || fail "$path sem view de itens em aberto excluindo .catalisa"
 done
+[ ! -e templates/vault/Ritos/devsecops-maturity.md ] || fail "DevSecOps não é rito (virou iniciativa de diagnóstico)"
 
-[ -f templates/vault/02-Corrente-DevSecOps/devsecops-maturity.md ] || fail "devsecops-maturity.md ausente"
-grep -qF "DevSecOps Maturity" templates/vault/02-Corrente-DevSecOps/devsecops-maturity.md || fail "devsecops-maturity.md sem título esperado"
-
-[ -f templates/vault/03-Templates/rito-encontro.md ] || fail "rito-encontro.md ausente"
-grep -q "^rito:" templates/vault/03-Templates/rito-encontro.md || fail "rito-encontro.md sem campo frontmatter 'rito'"
+e=templates/vault/.catalisa/templates/encontro.md
+[ -f "$e" ] || fail "$e ausente"
+for field in rito: data: presentes:; do grep -q "^$field" "$e" || fail "$e sem campo '$field'"; done
+for s in Pauta Decisões Capturas Pendências; do grep -q "## $s" "$e" || fail "$e sem seção '$s'"; done
+grep -q "YYYY-MM-DD-" templates/vault/Ritos/README.md || fail "Ritos/README.md não documenta nome dos encontros"
 echo "PASS"

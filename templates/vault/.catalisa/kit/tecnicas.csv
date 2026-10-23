@@ -1,0 +1,28 @@
+id,categoria,nome,descricao,transicao
+cinco-porques,deep,Cinco Porquês,"Pergunte 'por quê?' em cadeia, cada resposta alimentando a próxima, até chegar à causa sob o sintoma.",dor-insight
+ishikawa,deep,Diagrama de Ishikawa,"Divida o problema em categorias de causa (pessoas, processo, ferramentas, ambiente, gestão, cliente) e explore cada espinha.",dor-insight
+mapa-causal,deep,Mapa de Loops Causais,"Desenhe os ciclos de realimentação entre causas e efeitos, identifique os que reforçam e os que equilibram, e mire o ponto de alavanca.",dor-insight
+tempestade-de-perguntas,deep,Tempestade de Perguntas,"Gere apenas perguntas sobre o problema, sem respostas, até o problema que realmente vale resolver aparecer.",dor-insight
+analise-de-falha,deep,Análise de Falha,"Disseque uma falha relevante: o que quebrou, por que quebrou, que lição deixa e como aplicá-la aqui.",dor-insight
+laddering,deep,Laddering,Pergunte 'e o que isso daria?' subindo a cadeia até a necessidade real por trás do pedido.,dor-insight
+mapa-de-restricoes,deep,Mapa de Restrições,"Liste todas as restrições, separe as reais das imaginadas e decida para cada uma: dissolver, contornar ou usar a favor.",dor-insight
+starbursting,structured,Starbursting,"Interrogue o problema só com perguntas (quem, o quê, onde, quando, por quê, como), esgotando cada eixo antes de responder.",dor-insight
+olhar-estrangeiro,theatrical,Olhar Estrangeiro,"Narre o problema como um observador de fora que estranha tudo; registre o que parece arbitrário, normalizado ou absurdo.",dor-insight
+como-poderiamos,structured,Como Poderíamos (How Might We),Reescreva o insight como um conjunto de perguntas 'Como poderíamos...?' e só então gere ideias contra as mais afiadas.,insight-iniciativa
+primeiros-principios,creative,Primeiros Princípios,"Reduza o problema a fatos comprovados, descarte as premissas herdadas e reconstrua a solução só sobre eles.",insight-iniciativa
+inversao-de-premissas,deep,Inversão de Premissas,"Liste as premissas embutidas no problema, inverta cada uma e construa uma solução sobre a versão invertida.",insight-iniciativa
+brainstorming-reverso,creative,Brainstorming Reverso,Pergunte 'como faríamos isso dar errado?' e transforme cada forma de sabotagem na contramedida inversa.,insight-iniciativa
+pensamento-analogico,creative,Pensamento Analógico,Pergunte 'isso se parece com o quê?' e traga o padrão de solução do domínio que responde.,insight-iniciativa
+polinizacao-cruzada,creative,Polinização Cruzada,Pergunte como outra indústria ou outro time resolveria o problema e adapte a jogada ao contexto.,insight-iniciativa
+contradicao-triz,deep,Contradição TRIZ,Nomeie a contradição central (o que só melhora piorando outra coisa) e busque formas de vencer os dois lados.,insight-iniciativa
+construir-sobre-o-que-funciona,deep,Construir sobre o que Funciona,"Identifique o que já dá certo e por quê, e gere ideias para ampliar e replicar em vez de consertar o que está quebrado.",insight-iniciativa
+cenarios-e-se,creative,Cenários E Se,"Remova uma restrição de cada vez (orçamento ilimitado, o oposto é verdade, o problema sumiu) e veja quais ideias aparecem.",insight-iniciativa
+arvore-de-decisao,structured,Árvore de Decisão,"Mapeie cada ponto de escolha e os caminhos que se abrem, seguindo cada ramo até o resultado e o risco.",insight-iniciativa
+metodo-disney,structured,Método Disney,"Passe a ideia por três salas: Sonhador (tudo vale), Realista (como faríamos) e Crítico (o que quebra).",insight-iniciativa
+seis-chapeus,structured,Seis Chapéus,"Examine a proposta de seis ângulos, um por vez: fatos, emoções, benefícios, riscos, ideias novas e processo.",iniciativa-output
+backcasting,structured,Backcasting,Descreva o futuro com a iniciativa concluída e volte passo a passo até o primeiro movimento necessário hoje.,iniciativa-output
+advogado-do-diabo,theatrical,Tribunal do Advogado do Diabo,"Encene um julgamento: acuse a proposta, defenda-a e dê o veredito, cada papel argumentado por completo.",iniciativa-output
+utopia-distopia,speculative_future,Utopia vs. Distopia,Escreva o mesmo futuro duas vezes: a versão em que tudo deu certo e a manchete em que tudo deu errado.,iniciativa-output
+lente-de-stakeholders,collaborative,Lente de Stakeholders,"Fale como cada stakeholder da audiência: o que quer, o que teme e o que exigiria da proposta.",iniciativa-output
+pre-mortem,risk,Pre-mortem,Assuma que a iniciativa falhou daqui a seis meses e liste os motivos; reforce a proposta contra os mais prováveis.,iniciativa-output
+cenarios-cruzados,speculative_future,Cenários Cruzados,Cruze duas incertezas de alto impacto em quatro futuros e encontre o movimento que funciona em todos.,iniciativa-output

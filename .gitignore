@@ -1,5 +1,8 @@
 # Artefatos temporários de teste
 /tmp-test-*
 
+# Artefatos temporários da construção do harness (contêm contexto de cliente)
+_artifacts/
+
 # Worktrees e scaffolds locais de ferramentas de IA
 .claude/worktrees/

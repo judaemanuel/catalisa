@@ -10,7 +10,9 @@ PWD_REPO="$(pwd)"
 # Caso 1: alvo novo, script chamado por caminho absoluto de outro cwd
 ( cd /tmp && bash "$PWD_REPO/install.sh" "$TMP/fresh" )
 [ -f "$TMP/fresh/README.md" ] || fail "install.sh não criou README.md no alvo"
-[ -d "$TMP/fresh/01-Ritos" ] || fail "install.sh não copiou 01-Ritos"
+[ -d "$TMP/fresh/Ritos" ] || fail "install.sh não copiou Ritos"
+[ -f "$TMP/fresh/.catalisa/templates/dor.md" ] || fail "install.sh não copiou a pasta oculta .catalisa"
+[ -f "$TMP/fresh/.obsidian/plugins/templater-obsidian/data.json" ] || fail "install.sh não copiou a config do Templater"
 [ -d "$TMP/fresh/.git" ] || fail "install.sh não inicializou git no alvo"
 commits=$(git -C "$TMP/fresh" log --oneline | wc -l)
 [ "$commits" -eq 1 ] || fail "esperado exatamente 1 commit no alvo, encontrado $commits"

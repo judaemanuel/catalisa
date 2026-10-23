@@ -1,6 +1,8 @@
 # catalisa
 
-Gerador de um harness de melhoria contínua baseado no ciclo PDCA. A partir de um conjunto fixo de templates, `catalisa` cria uma instância (vault) pronta para uso, com estrutura de pastas, templates atômicos e hubs de rito já versionados em git.
+Gerador de um harness de melhoria contínua baseado no ciclo PDCA. A partir de um conjunto fixo de templates, `catalisa` cria uma instância (vault Obsidian) pronta para uso, já versionada em git.
+
+O vault rastreia o ciclo Dor → Insight → Iniciativa → Output, com cada nota amadurecendo por estado. Ele inclui hubs de rito, um Painel de lacunas e um Kit de técnicas de análise. Detalhes de uso e plugins obrigatórios: `templates/vault/README.md`.
 
 ## Como instalar uma instância
 

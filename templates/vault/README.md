@@ -1,34 +1,56 @@
-# Vault de Templates — Catalisa v0.1.0
+# Vault Catalisa
 
-Este vault é um harness pessoal de melhoria contínua baseado em Obsidian. Fornece estrutura, templates e scripts para aplicar ciclos de planejamento, ação e reflexão (PDCA) no dia a dia.
+Harness pessoal de melhoria contínua em Obsidian. Rastreia o ciclo completo de uma melhoria, da dor observada num rito até o resultado medido, com vocabulário de práticas consagradas: nugget de atomic research, A3, Hypothesis-Driven Development e ADR.
 
-## Estrutura das pastas
+Comece pelo [[Painel]].
 
-O vault está organizado em 5 pastas principais, cada uma com um propósito específico:
+## Fluxo
 
-### 00-Diario
-Registro diário do progresso, reflexões e observações. Serve como log contínuo de atividades e como matéria-prima para sínteses periódicas.
+```
+Rito / Diário ──► Dor ──► Insight ──► Iniciativa ──► Output
+  (captura)     capturada  hipotese    proposta       rascunho
+                confirmada evidenciado aprovada       revisao
+                agrupada   validado    em-execucao    pronto
+                           refutado    analisada      apresentado
+                                       resolvida
+```
 
-### 01-Ritos
-Procedimentos, rituais e cerimônias recorrentes (retrospectivas, planejamentos semanais, daily standups, check-ins pessoais). Cada rito tem um template que facilita sua execução e documentação.
+Cada nota amadurece **no próprio lugar**: o estado fica no frontmatter (`status`), e a pasta indica apenas o tipo da entidade. As views do [[Painel]] e das hubs de rito filtram por estado.
 
-### 02-Corrente-DevSecOps
-Guias, checklists e workflows específicos para desenvolvimento, segurança e operações. Referência rápida para processos técnicos críticos.
+| Pasta | Conteúdo |
+|---|---|
+| [[Diario/README\|Diario]] | Captura diária (~5 min) e carry-over de pendências |
+| [[Ritos/README\|Ritos]] | Hubs dos ritos e `Encontros/` (uma nota por ocorrência) |
+| [[Dores/README\|Dores]] | Problemas observados, com evidência |
+| [[Insights/README\|Insights]] | Hipóteses de causa ligando dores |
+| [[Iniciativas/README\|Iniciativas]] | Melhorias e diagnósticos: A3, decisões (ADR), medição |
+| [[Outputs/README\|Outputs]] | Material para audiências específicas |
 
-### 03-Templates
-Gabaritos reutilizáveis para criação de notas (planejamento, execução, revisão, decisões). Base para acelerar a captura de novos itens sem reinventar o formato.
+## Cadência
 
-### 04-Action-Items
-Tarefas, iniciativas e commitments em andamento. Rastreamento centralizado de o que está em progresso, bloqueado ou concluído.
+| Momento | Duração | O que fazer |
+|---|---|---|
+| Diário | ~5 min | Só capturar |
+| Revisão semanal | ~30 min | Promover estados: confirmar dores, sintetizar insights (técnicas do Kit) |
+| Pré-rito | — | Montar pauta e Output a partir do Painel e da hub do rito |
+| Pós-rito | — | Registrar o encontro e lançar decisões nas Iniciativas |
+
+## Infraestrutura (`.catalisa/`)
+
+- `.catalisa/templates/`: templates do Templater (`dor`, `insight`, `iniciativa`, `output`, `encontro`, `diario`).
+- `.catalisa/kit/`: técnicas de análise, movimentos de convergência e posturas de facilitação, usados na revisão semanal e pela camada de IA.
 
 ## Plugins Obsidian obrigatórios
 
-Este vault depende de três plugins Obsidian para funcionar corretamente:
+- **Templater**: cria notas a partir de `.catalisa/templates/`. O vault já vem com `templates_folder` configurado em `.obsidian/plugins/templater-obsidian/data.json`.
+- **Dataview**: views por estado no Painel e nas hubs de rito.
+- **QuickAdd**: captura rápida.
+- **Hidden Folders Access**: o Obsidian ignora pastas que começam com `.`. Este plugin injeta `.catalisa/` no índice para o Templater enxergar os templates. Desktop-only; requer Obsidian 1.13+.
 
-- **Templater**: Automatiza a criação de notas usando templates dinâmicos, injetando data, hora, variáveis e comandos personalizados. Essencial para popular campos automaticamente ao criar novas notas.
+### Configuração após instalar os plugins
 
-- **Dataview**: Consulta e visualiza dados estruturados dentro do vault (metadados YAML, fields), criando visualizações dinâmicas de tarefas, status e progresso sem precisar de ferramentas externas.
+1. **Settings → Hidden Folders Access**: ative a pasta `.catalisa`.
+2. **Settings → Templater**: confirme que *Template folder location* está em `.catalisa/templates`.
+3. Crie uma nota de teste com *Templater: Create new note from template* e confira se os 6 templates aparecem.
 
-- **QuickAdd**: Oferece captura rápida de novas ideias, tarefas e notas via comandos de teclado e modais leves, reduzindo atrito na entrada de dados durante o dia.
-
-Instale esses plugins via Obsidian Community Plugins antes de usar este vault.
+Com o plugin ativo, `.catalisa/` fica visível no explorador e na busca. As queries do Painel e das hubs excluem a pasta (`FROM -".catalisa"`), então os templates não aparecem como itens.
