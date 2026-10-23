@@ -3,7 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 fail() { echo "FAIL: $1"; exit 1; }
 
-V=templates/vault
+V=scaffold
 c=$V/CLAUDE.md
 [ -f "$c" ] || fail "$c ausente"
 [ "$(wc -l < "$c")" -le 40 ] || fail "$c deve ser curto (<= 40 linhas)"

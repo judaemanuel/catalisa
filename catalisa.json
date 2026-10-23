@@ -1,5 +1,17 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "gerador": "catalisa",
-  "templates": ["Diario", "Ritos", "Dores", "Insights", "Iniciativas", "Outputs", ".catalisa", ".claude", "CLAUDE.md"]
+  "sistema": [
+    ".claude",
+    ".catalisa",
+    "CLAUDE.md",
+    "README.md",
+    "Painel.md",
+    "Diario/README.md",
+    "Ritos/README.md",
+    "Dores/README.md",
+    "Insights/README.md",
+    "Iniciativas/README.md",
+    "Outputs/README.md"
+  ]
 }

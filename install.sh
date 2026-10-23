@@ -10,7 +10,7 @@ if [ -e "$TARGET" ] && [ -n "$(ls -A "$TARGET" 2>/dev/null)" ]; then
 fi
 
 mkdir -p "$TARGET"
-cp -r "$SCRIPT_DIR/templates/vault/." "$TARGET/"
+cp -r "$SCRIPT_DIR/scaffold/." "$TARGET/"
 
 version=$(grep -o '"version"[^,}]*' "$SCRIPT_DIR/catalisa.json" | grep -o '[0-9][0-9.]*' | head -1)
 instalado_em=$(date -Iseconds)

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1
+
+Só no gerador; o conteúdo das instâncias não muda.
+
+- `templates/vault/` renomeado para `scaffold/`, para não confundir com `.catalisa/templates`. Continua sendo um espelho exato da instância.
+- `catalisa.json`: o campo `templates` (sem uso) foi substituído por `sistema`, a lista de caminhos do gerador que uma atualização manual pode sobrescrever.
+
 ## 0.3.0
 
 Camada de IA (Claude Code) na instância.

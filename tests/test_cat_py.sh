@@ -6,7 +6,7 @@ fail() { echo "FAIL: $1"; exit 1; }
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 V="$TMP/vault"
-cp -r templates/vault "$V"
+cp -r scaffold "$V"
 CAT="$V/.claude/skills/cat-common/scripts/cat.py"
 [ -f "$CAT" ] || fail "$CAT ausente"
 

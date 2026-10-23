@@ -3,7 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 fail() { echo "FAIL: $1"; exit 1; }
 
-T=templates/vault/.catalisa/templates
+T=scaffold/.catalisa/templates
 declare -A inicial=([dor]=capturada [insight]=hipotese [iniciativa]=proposta [output]=rascunho)
 declare -A extras=(
   [dor]="evidencia: encontro:"

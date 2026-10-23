@@ -3,7 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 fail() { echo "FAIL: $1"; exit 1; }
 
-K=templates/vault/.catalisa/kit
+K=scaffold/.catalisa/kit
 c=$K/tecnicas.csv
 [ -f "$c" ] || fail "$c ausente"
 [ "$(head -1 "$c")" = "id,categoria,nome,descricao,transicao" ] || fail "$c com cabeçalho inesperado"

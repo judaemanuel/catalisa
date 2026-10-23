@@ -10,17 +10,17 @@ declare -A hubs=(
   [people]="People"
 )
 for f in "${!hubs[@]}"; do
-  path="templates/vault/Ritos/$f.md"
+  path="scaffold/Ritos/$f.md"
   [ -f "$path" ] || fail "$path ausente"
   grep -qF "${hubs[$f]}" "$path" || fail "$path não contém o título '${hubs[$f]}'"
   grep -q 'FROM "Ritos/Encontros"' "$path" || fail "$path não lista encontros de Ritos/Encontros"
   grep -q 'FROM -"\.catalisa"' "$path" || fail "$path sem view de itens em aberto excluindo .catalisa"
 done
-[ ! -e templates/vault/Ritos/devsecops-maturity.md ] || fail "DevSecOps não é rito (virou iniciativa de diagnóstico)"
+[ ! -e scaffold/Ritos/devsecops-maturity.md ] || fail "DevSecOps não é rito (virou iniciativa de diagnóstico)"
 
-e=templates/vault/.catalisa/templates/encontro.md
+e=scaffold/.catalisa/templates/encontro.md
 [ -f "$e" ] || fail "$e ausente"
 for field in rito: data: presentes:; do grep -q "^$field" "$e" || fail "$e sem campo '$field'"; done
 for s in Pauta Decisões Capturas Pendências; do grep -q "## $s" "$e" || fail "$e sem seção '$s'"; done
-grep -q "YYYY-MM-DD-" templates/vault/Ritos/README.md || fail "Ritos/README.md não documenta nome dos encontros"
+grep -q "YYYY-MM-DD-" scaffold/Ritos/README.md || fail "Ritos/README.md não documenta nome dos encontros"
 echo "PASS"

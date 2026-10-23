@@ -3,8 +3,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 fail() { echo "FAIL: $1"; exit 1; }
 
-f="templates/vault/Painel.md"
-T=templates/vault/.catalisa/templates
+f="scaffold/Painel.md"
+T=scaffold/.catalisa/templates
 [ -f "$f" ] || fail "$f ausente"
 [ "$(grep -c '```dataview' "$f")" -ge 6 ] || fail "$f deveria ter ao menos 6 views dataview"
 blocks=$(grep -c '^FROM' "$f")
