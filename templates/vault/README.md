@@ -40,6 +40,10 @@ Cada nota amadurece **no próprio lugar**: o estado fica no frontmatter (`status
 - `.catalisa/templates/`: templates do Templater (`dor`, `insight`, `iniciativa`, `output`, `encontro`, `diario`).
 - `.catalisa/kit/`: técnicas de análise, movimentos de convergência e posturas de facilitação, usados na revisão semanal e pela camada de IA.
 
+## Camada de IA (Claude Code)
+
+Abra o Claude Code na raiz do vault. As regras ficam em `CLAUDE.md`, e as skills `/cat-capturar`, `/cat-sintetizar`, `/cat-preparar-rito` e `/cat-registrar-encontro` cobrem a cadência. `python3 .claude/skills/cat-common/scripts/cat.py estado` mostra o Painel no terminal, e `cat.py validar` checa as regras de estado.
+
 ## Plugins Obsidian obrigatórios
 
 - **Templater**: cria notas a partir de `.catalisa/templates/`. O vault já vem com `templates_folder` configurado em `.obsidian/plugins/templater-obsidian/data.json`.

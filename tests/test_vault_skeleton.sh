@@ -28,5 +28,5 @@ cfg=$V/.obsidian/plugins/templater-obsidian/data.json
 grep -q '"templates_folder": *".catalisa/templates"' "$cfg" || fail "$cfg não aponta templates_folder para .catalisa/templates"
 
 [ -f catalisa.json ] || fail "catalisa.json ausente"
-grep -q '"0.2.0"' catalisa.json || fail "catalisa.json não fixa version 0.2.0"
+grep -q '"0.3.0"' catalisa.json || fail "catalisa.json não fixa version 0.3.0"
 echo "PASS"

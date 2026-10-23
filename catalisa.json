@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "gerador": "catalisa",
-  "templates": ["Diario", "Ritos", "Dores", "Insights", "Iniciativas", "Outputs", ".catalisa"]
+  "templates": ["Diario", "Ritos", "Dores", "Insights", "Iniciativas", "Outputs", ".catalisa", ".claude", "CLAUDE.md"]
 }

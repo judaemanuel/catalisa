@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0
+
+Camada de IA (Claude Code) na instância.
+
+- `CLAUDE.md` da instância: confidencialidade, operador como dono de toda mudança de estado, proibição de inventar evidência, decisões só acrescentadas (append-only), convenções de nome de arquivo.
+- Skills `cat-capturar` (texto livre → dores), `cat-sintetizar` (revisão semanal, postura facilitador), `cat-preparar-rito` (briefing e pauta) e `cat-registrar-encontro` (encontro, decisões ADR, mudanças de estado propostas).
+- `cat.py` (Python stdlib): `estado` (o Painel fora do Obsidian, com filtro `--rito`) e `validar` (regras de estado). Os estados válidos são lidos dos próprios templates.
+
 ## 0.2.0
 
 Reestruturação do modelo: as notas amadurecem por estado (`status` no frontmatter) e a pasta indica só o tipo da entidade. Vocabulário alinhado a práticas consagradas: nugget de atomic research, A3, Hypothesis-Driven Development e ADR. **Incompatível com a 0.1.0**: recrie a instância com `install.sh`.
